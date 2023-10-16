@@ -6,9 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+
+
 
 }
+
 
 
 /*/////////////////////////////////////////////////////// Header section style 
@@ -18,11 +20,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100%;
     background-color: #0a0a0a;
     margin: 0 10rem;
     border-radius: 2rem;
     margin-top: 5rem;
+    overflow: hidden;
 
 }
 
@@ -87,20 +90,47 @@
 
 /* ///////////////////////////////////////////////////////////main section  
 ////////////////////////////////////////////////////////////*/
+.main-container {
 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+}
+
+.card-main-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
 
 .menu-card {
-    width: 100%;
+    width: 400px;
+    height: 300px;
+    background-color: #0a0a0a;
+    border-radius: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+
+
 }
 
 .button1 {
     padding: 1rem 2rem;
     border: none;
     outline: none;
-    background: #e7d7d7;
+    background: #ffff;
     border-radius: 5px;
     cursor: pointer;
-    width: 10rem;
+    width: 15rem;
+    margin-top: 1rem;
+    text-align: center;
 
 }
 
@@ -108,14 +138,134 @@
     color: #000;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 900;
+
 
 }
 
+.button-2 {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    background: #dc2f2f;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15rem;
+    margin-top: 1rem;
+    text-align: center;
+
+}
+
+.button-2>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
 
 
 
+}
 
+.card-container {
+    width: 300px;
+    height: 420px;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.img-main {
+    width: 100%;
+    height: 50%;
+
+}
+
+.img-main>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.text-main {
+    margin-left: 1rem;
+}
+
+.card-fotter {
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.button-3 {
+    padding: 4px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 8rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 3px solid #000000;
+    margin-bottom: 1rem;
+
+}
+
+.button-3>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+
+}
+
+/*////////////////////////////////////////////////////////////
+ footer section
+ ////////////////////////////////////////////////////////////*/
+
+.footer-container {
+    width: 100%;
+    height: 300px;
+    background-color: #0a0a0a;
+    margin-top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.goal>h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    border-top: 0.1px solid #ffffff54;
+
+}
+
+.footer-sub-container>span {
+    margin-top: 4rem;
+
+}
 
 
 
@@ -163,9 +313,10 @@
 @media screen and (max-width: 768px) {
 
     * {
-        overflow: hidden;
+
         margin: 0;
         padding: 0;
+
     }
 
     /*/////////////////////////////////////////////////////// Header section style 
@@ -237,6 +388,134 @@
         height: 90%;
 
     }
+
+    /*////////////////////////////////////////////////////////////main section
+//////////////////////////////////////////////////////////*/
+    .main-container {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .menu-card {
+        width: 100%;
+        height: 10%;
+        background-color: #0a0a0a;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 0;
+
+
+
+
+    }
+
+    .card-main-container {
+        display: grid;
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: 2rem 2.5rem;
+
+
+    }
+
+    .button1 {
+        padding: 1rem 1rem;
+        border: none;
+        outline: none;
+        background: #ffff;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 15rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+
+    .button1>a {
+        color: #000;
+        text-decoration: none;
+        font-size: .5rem;
+        font-weight: 900;
+
+
+    }
+
+    .button-2 {
+        padding: 1rem 1rem;
+        border: none;
+        outline: none;
+        background: #dc2f2f;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 10rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+
+    .button-2>a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: .5rem;
+        font-weight: 900;
+
+
+
+    }
+
+    /* ////////////////////////////////////////////////////////////
+        footer section ////////////////////////////////////////////////////////////*/
+
+    .footer-container {
+        width: 100%;
+        height: 200px;
+        background-color: #0a0a0a;
+        margin-top: 10rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+
+
+    }
+
+    .goal>h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-sub-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: #fff;
+        border-top: 0.1px solid #ffffff54;
+
+
+    }
+
+    .footer-sub-container>span {
+        margin-top: 2rem;
+        font-size: .5rem;
+
+    }
+
 }
 
 /* ///////////////////////////////////////////////////////////Styles for tablets (landscape and portrait) 
@@ -244,16 +523,18 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     /*/////////////////////////////////////////////////////// Header section style 
-    //////////////////////////////////////////////// */
+//////////////////////////////////////////////// */
+
     .header-main-container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        width: 100%;
+        height: 100%;
+        background-color: #0a0a0a;
         margin: 0;
-
+        border-radius: 2rem;
+        margin-top: 0;
+        width: 100%;
 
 
     }
@@ -261,17 +542,8 @@
     .header-text-container {
 
         color: #fff;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2rem;
-        padding: 0 2rem;
-        margin-top: 5rem;
-        height: 50%;
-
+        width: 50%;
+        margin-left: 3rem;
     }
 
     .header-text-container>h1 {
@@ -279,27 +551,134 @@
         font-size: 2rem;
         font-weight: 900;
         margin-bottom: 1rem;
-
     }
 
     .header-text-container>p {
 
-        font-size: 1.5rem;
-        font-weight: 900;
+        font-size: 1rem;
+        font-weight: 400;
         margin-bottom: 1rem;
-
+        color: gray;
     }
+
 
     .header-img-container {
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2rem;
+
     }
 
     .header-img-container>img {
-        width: 100%;
+        width: 80%;
 
     }
+
+
+    /*////////////////////////////////////////////////////////////button section
+//////////////////////////////////////////////////////////*/
+
+    .button-main-container {
+
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        background: #dc2f2f;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 8rem;
+    }
+
+    .button-main-container>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: .5rem;
+        font-weight: 900;
+
+
+
+    }
+
+
+    /*////////////////////////////////////////////////////////////main section
+    //////////////////////////////////////////////////////////*/
+    .main-container {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .menu-card {
+        width: 100%;
+        height: 10%;
+        background-color: #0a0a0a;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 0;
+
+
+
+
+    }
+
+    .card-main-container {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2rem 5rem;
+
+
+    }
+
+    .button1 {
+        padding: 1rem 1rem;
+        border: none;
+        outline: none;
+        background: #ffff;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 15rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+
+    .button1>a {
+        color: #000;
+        text-decoration: none;
+        font-size: .5rem;
+        font-weight: 900;
+
+
+    }
+
+    .button-2 {
+        padding: 1rem 1rem;
+        border: none;
+        outline: none;
+        background: #dc2f2f;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 10rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+
+    .button-2>a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: .5rem;
+        font-weight: 900;
+
+
+
+    }
+
+
 }
